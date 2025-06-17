@@ -40,5 +40,10 @@ export const useDB = async (event?: H3Event<EventHandlerRequest>): Promise<NodeP
 export type TableNames = keyof typeof schema
 
 export function isValidTable(table: string): table is TableNames {
-  return table in schema
+  // Check if the table exists in the schema and is not an enum
+  return table in schema &&
+    // Check if it's a table by looking for common table properties
+    typeof (schema as any)[table] === 'object' &&
+    (schema as any)[table] !== null &&
+    'name' in (schema as any)[table]
 }

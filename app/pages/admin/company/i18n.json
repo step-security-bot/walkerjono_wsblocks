@@ -1,0 +1,48 @@
+{
+  "en": {
+    "company": {
+      "title": "Company Management",
+      "columns": {
+        "name": "Name",
+        "type": "Type",
+        "externalReference": "External Reference",
+        "isActive": "Status"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive"
+      },
+      "types": {
+        "customer": "Customer"
+      },
+      "actions": {
+        "createCompany": "Create Company",
+        "deactivate": "Deactivate",
+        "activate": "Activate"
+      },
+      "form": {
+        "name": "Name",
+        "type": "Type",
+        "externalReference": "External Reference",
+        "isActive": "Active"
+      },
+      "validation": {
+        "nameMin": "Name must be at least {n} characters",
+        "nameRequired": "Name is required"
+      },
+      "modals": {
+        "createCompany": "Create New Company",
+        "deactivate": {
+          "title": "Deactivate Company",
+          "reason": "Deactivation Reason",
+          "reasonPlaceholder": "Enter reason for deactivating company",
+          "submit": "Deactivate Company"
+        }
+      },
+      "filters": {
+        "active": "Active",
+        "inactive": "Inactive"
+      }
+    }
+  }
+}
